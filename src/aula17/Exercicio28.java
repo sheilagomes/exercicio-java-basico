@@ -2,27 +2,30 @@
 
 package aula17;
 
+import java.util.Scanner;
+
 public class Exercicio28 {
 
 	public static void main(String[] args) {
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
-		
+
 		System.out.println("Digite um número inteiro:");
-        int qtTemp = scan.nextInt();
+        int numero = scan.nextInt();
+		System.out.println(numero);
+        int cont = 2;
+		boolean primo = true;
 
-		
-		numero = int(input('Digite um número inteiro positivo: '))
-				cont, primo = 2, True
-				while cont < numero:
-				    if numero % cont == 0:
-				        primo = False;
-				    cont = cont + 1
-				if (primo):
-				    print(f'O número {numero} é primo')
-				else:
-				    print(f'O número {numero} não é primo')
-
+		while (cont < numero) {
+			if (numero % cont == 0) {
+				primo = false;
+				break;
+			}
+			cont += 1;
+		}
+		if (primo) {
+			System.out.println("O número " + numero + " é primo");
+		} else {
+			System.out.println("O número " + numero + " não é primo");
+		}
 	}
-
 }

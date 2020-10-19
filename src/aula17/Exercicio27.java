@@ -8,7 +8,6 @@ public class Exercicio27 {
 
 	public static void main(String[] args) {
 		//ler um conjunto indeterminado de temperaturas
-		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.println("Quantas temperaturas?");
