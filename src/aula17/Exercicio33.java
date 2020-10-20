@@ -4,6 +4,7 @@ Imprima no final a soma da série.*/
 
 package aula17;
 
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Exercicio33 {
@@ -13,14 +14,19 @@ public class Exercicio33 {
         double soma = 0;
         double j = 1;
 
+        DecimalFormat format = new DecimalFormat("###,###.##");
+
         System.out.println("Digite o número de termos da série:");
         int termos = scan.nextInt();
+
+        System.out.print("S = 1/1");
 
         for (int i = 1; i <= termos ; i++) {
             soma += (i / j);
             j += 2;
-            System.out.println(i);
-            System.out.println(j);
+            System.out.print(" + " + i + "/" + (int)j);
         }
+
+        System.out.println(" = " + format.format(soma));
     }
 }
