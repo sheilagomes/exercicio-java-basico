@@ -12,13 +12,13 @@ public class Exercicio23 {
 
         for (int i = 0; i < vetorA.length; i++) {
             System.out.println("Digite o " + (i+1) + "o. número do vetor");
-            vetorA[i] = scan.nextInt();;
+            vetorA[i] = scan.nextInt();
         }
 
-        for (int i = 0; i < vetorA.length; i++) {
-            if (vetorA[i] % 2 == 0) {
+        for (int j : vetorA) {
+            if (j % 2 == 0) {
                 marcador += 1;
-            }  else {
+            } else {
                 break;
             }
         }
